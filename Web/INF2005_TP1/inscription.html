@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Restaurant Le déjeuner - Inscription</title>
+    <link href="TP1_CSS.css" rel="stylesheet" type="text/css">
+</head>
+<body >
+<header>
+    <div class="div_header">
+        <div class="header1">
+            <a href="index.html">
+                <img id="logo" src="Image/logo.jpg" alt="logo">
+            </a>
+        </div>
+        <div class="header2">
+            <nav>
+                <a href="inscription.html">S'inscrire</a>
+                <a href="index.html#div_menu">Menu</a>
+                <a href="index.html#div_horaire">Horaire</a>
+                <a href="index.html#div_a_propos">À propos</a>
+                <a href="mailto:danyderoy@gmail.com">Contactez-nous</a>
+                <a href="https://www.google.ca/maps">
+                    Trouvez-nous</a>
+            </nav>
+        </div>
+    </div>
+</header>
+<section class="sec_formulaire">
+    <div>
+        <h2>
+            Comment s'inscrire<img src="Image/exclamation.png" class="exclamation" alt="!">
+        </h2>
+        <blockquote>
+            <ol>
+                <li>Cliquez sur la zone de 'Nom'</li>
+                <li>Tapez votre nom (sur le clavier en utilisant vos doigt...)</li>
+                <li>Cliquez sur la zone de 'Prénom'</li>
+                <li>Tapez votre prénom (sur le clavier toujours en utilisant vos doigt...)</li>
+                <li>Maintenant, prenez une pause...</li>
+                <li>Cliquez sur la zone 'Courriel'</li>
+                <li>Tapez votre courriel, exemple: oeuf@battu.coco</li>
+                <li>Cliquez sur la zone 'Confirmez Courriel'</li>
+                <li>Retapez votre courriel...le même qu'en 7...</li>
+                <li>Acceptez de recevoir de la belle publicité</li>
+                <li>Pour terminer, cliquez sur le bouton envoyer</li>
+            </ol>
+        </blockquote>
+    </div>
+    <div id="div_formulaire">
+        <table id="tab_formulaire">
+            <tr>
+                <td class="td_formulaire">
+                    <label for="nom">Nom :</label>
+                </td>
+                <td>
+                    <input type="text" id="nom" name="name" size="60">
+                </td>
+            </tr>
+            <tr>
+                <td class="td_formulaire">
+                    <label for="prenom">Prénom :</label>
+                </td>
+                <td>
+                    <input type="text" id="prenom" name="fname" size="60">
+                </td>
+            </tr>
+            <tr>
+                <td class="td_formulaire">
+                    <label for="courriel">Courriel :</label>
+                </td>
+                <td>
+                    <input type="text" id="courriel" name="email" size="60">
+                </td>
+            </tr>
+            <tr>
+                <td class="td_formulaire">
+                    <label for="conf_courriel">Confirmer courriel :</label>
+                </td>
+                <td>
+                    <input type="text" id="conf_courriel" name="email" size="60">
+                </td>
+            </tr>
+            <tr>
+                <td class="td_formulaire">
+                    <input type="checkbox" checked="checked" id="authorisation" name="publicity" value="1">
+                </td>
+                <td>
+                    <label for="authorisation">En cochant cette case vous acceptez de recevoir des offres promotionnelle
+                        de 'Le Déjeuner'</label>
+                </td>
+            </tr>
+        </table>
+            <div class="div_bouton">
+                <input type="reset" value="Réinitialiser" class="bouton">
+                <input type="submit" value="Envoyer" class="bouton">
+            </div>
+    </div>
+</section>
+<aside id="aside_img_form">
+    <img src="Image/side_formulaire.jpg" alt="side_1">
+</aside>
+<footer>
+    <h6>
+        DANY DEROY 2015 TP INF2005 PROGRAMMATION WEB
+    </h6>
+</footer>
+</body>
+</html>
