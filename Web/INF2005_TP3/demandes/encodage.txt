@@ -1,0 +1,2 @@
+encodage -> utf-8
+csv -> ; séparation
