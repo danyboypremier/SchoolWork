@@ -1,0 +1,8 @@
+<footer>
+    <h6>
+        DANY DEROY 2015 TP2 INF2005 PROGRAMMATION WEB
+    </h6>
+</footer>
+</body>
+
+</html>

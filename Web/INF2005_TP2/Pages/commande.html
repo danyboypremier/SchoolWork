@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Traiteur Le berger - Commande</title>
+    <link href="../CSS/TP2_CSS.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+    <div class="div_header">
+        <div class="header1">
+            <a href="../index.html">
+                <img id="logo" src="../Image/logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="header2">
+            <nav>
+                <a href="information.html">Information</a>
+                <a href="contact.html">Contact</a>
+                <a href="commande.html">Commande</a>
+            </nav>
+        </div>
+    </div>
+</header>
+<section class="contenu_form">
+    <h2>
+        Formulaire de commande
+    </h2>
+
+    <form action="../server.php" method="post">
+        <table>
+            <tr>
+                <td class="tab_right">
+                    <label for="nom_parent">Nom du parent :</label>
+                </td>
+                <td>
+                    <input type="text" id="nom_parent" name="nom_parent" size="60">
+                </td>
+            </tr>
+            <tr>
+                <td class="tab_right">
+                    <label for="nom_enfant">Nom de l'enfant :</label>
+                </td>
+                <td>
+                    <input type="text" id="nom_enfant" name="nom_enfant" size="60">
+                </td>
+            </tr>
+            <tr>
+                <td class="tab_right">
+                    <label for="ecole">École :</label>
+                </td>
+                <td>
+                    <input type="text" id="ecole" name="ecole" size="60">
+                </td>
+            </tr>
+            <tr>
+                <td class="tab_right">
+                    <label for="age">Âge de l'enfant :</label>
+                </td>
+                <td>
+                    <input type="text" id="age" name="age" size="10">
+                </td>
+            </tr>
+        </table>
+        <table class="tab">
+            <tr>
+                <td class="tab_right">
+                    Choix du lundi :
+                </td>
+                <td class="tab_center">
+                    <label for="lun_1">Spaghetti à la viande</label>
+                </td>
+                <td class="tab_center">
+                    <label for="lun_2">Salade du jardin</label>
+                </td>
+            </tr>
+            <tr class="tab_center">
+                <td>
+                </td>
+                <td>
+                    <input type="radio" id="lun_1" name="lundi" value="Spaghetti à la viande">
+                </td>
+                <td>
+                    <input type="radio" id="lun_2" name="lundi" value="Salade du jardin">
+                </td>
+            </tr>
+        </table>
+        <table class="tab">
+            <tr>
+                <td class="tab_right">
+                    Choix du mardi :
+                </td>
+                <td class="tab_center">
+                    <label for="mar_1">Pizza bacon</label>
+                </td>
+                <td class="tab_center">
+                    <label for="mar_2">Riz asiatique</label>
+                </td>
+            </tr>
+            <tr class="tab_center">
+                <td>
+                </td>
+                <td>
+                    <input type="radio" id="mar_1" name="mardi" value="Pizza bacon">
+                </td>
+                <td>
+                    <input type="radio" id="mar_2" name="mardi" value="Riz asiatique">
+                </td>
+            </tr>
+        </table>
+        <table class="tab">
+            <tr>
+                <td class="tab_right">
+                    Choix du mercredi :
+                </td>
+                <td class="tab_center">
+                    <label for="mer_1">Wrap au poulet</label>
+                </td>
+                <td class="tab_center">
+                    <label for="mer_2">Poutine aux légumes</label>
+                </td>
+            </tr>
+            <tr class="tab_center">
+                <td>
+                </td>
+                <td>
+                    <input type="radio" id="mer_1" name="mercredi" value="Wrap au poulet">
+                </td>
+                <td>
+                    <input type="radio" id="mer_2" name="mercredi" value="Poutine aux légumes">
+                </td>
+            </tr>
+        </table>
+        <table class="tab">
+            <tr>
+                <td class="tab_right">
+                    Choix du jeudi :
+                </td>
+                <td class="tab_center">
+                    <label for="jeu_1">Soupe ramen</label>
+                </td>
+                <td class="tab_center">
+                    <label for="jeu_2">Sushi de saumon</label>
+                </td>
+            </tr>
+            <tr class="tab_center">
+                <td>
+                </td>
+                <td>
+                    <input type="radio" id="jeu_1" name="jeudi" value="Soupe ramen">
+                </td>
+                <td>
+                    <input type="radio" id="jeu_2" name="jeudi" value="Sushi de saumon">
+                </td>
+            </tr>
+        </table>
+        <table class="tab">
+            <tr>
+                <td class="tab_right">
+                    Choix du vendredi :
+                </td>
+                <td class="tab_center">
+                    <label for="ven_1">Assiette de tofu</label>
+                </td>
+                <td class="tab_center">
+                    <label for="ven_2">Hamburger végé</label>
+                </td>
+            </tr>
+            <tr class="tab_center">
+                <td>
+                </td>
+                <td>
+                    <input type="radio" id="ven_1" name="vendredi" value="Assiette de tofu">
+                </td>
+                <td>
+                    <input type="radio" id="ven_2" name="vendredi" value="Hamburger végé">
+                </td>
+            </tr>
+        </table>
+        <div class="bouton_form">
+            <input type="reset" value="Réinitialiser">
+            <input type="submit" value="Soumettre">
+        </div>
+    </form>
+</section>
+<aside class="images">
+    <h6>
+        *La liste des ingrédients est sommaire et est assujetti à des changements
+    </h6>
+    <figure class="img_menu">
+        <img src="../Image/lundi_1.jpg" alt="Spaghetti à la viande">
+        <figcaption>
+            Spaghetti à la viande
+            <ul>
+                <li>boeuf et porc</li>
+                <li>parmesan</li>
+                <li>oignons</li>
+                <li>sauce tomate</li>
+            </ul>
+        </figcaption>
+    </figure>
+    <figure class="img_menu">
+        <img src="../Image/lundi_2.jpg" alt="Salade du jardin">
+        <figcaption>
+            Salade du jardin
+            <ul>
+                <li>mesclun</li>
+                <li>gaufrette fromage à la crême</li>
+                <li>vinaigrette balsamique</li>
+                <li>poivron 3 couleurs</li>
+            </ul>
+        </figcaption>
+    </figure>
+    <figure class="img_menu">
+        <img src="../Image/mardi_1.jpg" alt="Pizza bacon">
+        <figcaption>
+            Pizza bacon
+            <ul>
+                <li>pâte à pizza (gluten)</li>
+                <li>bacon</li>
+                <li>fromage mozzarella</li>
+                <li>huile aromatisée (facultatif)</li>
+            </ul>
+        </figcaption>
+    </figure>
+    <figure class="img_menu">
+        <img src="../Image/mardi_2.jpg" alt="Riz asiatique">
+        <figcaption>
+            Riz asiatique
+            <ul>
+                <li>riz</li>
+                <li>légumes</li>
+                <li>bouillon de poulet</li>
+                <li>poulet</li>
+            </ul>
+        </figcaption>
+    </figure>
+    <figure class="img_menu">
+        <img src="../Image/mercredi_1.jpg" alt="Wrap au poulet">
+        <figcaption>
+            Wrap au poulet
+            <ul>
+                <li>lanières de poulet</li>
+                <li>fromage mozzarella</li>
+                <li>tomates</li>
+                <li>bacon</li>
+            </ul>
+        </figcaption>
+    </figure>
+    <figure class="img_menu">
+        <img src="../Image/mercredi_2.jpg" alt="Poutine aux légumes">
+        <figcaption>
+            Poutine aux légumes
+            <ul>
+                <li>frites de navet</li>
+                <li>poivrons, tomates</li>
+                <li>fromage en grain (Lemaire)</li>
+                <li>sauce brune (poulet)</li>
+            </ul>
+        </figcaption>
+    </figure>
+    <figure class="img_menu">
+        <img src="../Image/jeudi_1.jpg" alt="Soupe ramen">
+        <figcaption>
+            Soupe ramen
+            <ul>
+                <li>bouillon miso</li>
+                <li>ramen</li>
+                <li>oeuf</li>
+                <li>légumes du moment</li>
+            </ul>
+        </figcaption>
+    </figure>
+    <figure class="img_menu">
+        <img src="../Image/jeudi_2.jpg" alt="Sushi de saumon">
+        <figcaption>
+            Sushi de saumon
+            <ul>
+                <li>saumon frais</li>
+                <li>riz</li>
+                <li>sauce à base de mayonnaise</li>
+                <li>soya</li>
+            </ul>
+        </figcaption>
+    </figure>
+    <figure class="img_menu">
+        <img src="../Image/vendredi_1.jpg" alt="Assiette de tofu">
+        <figcaption>
+            Assiette de tofu
+            <ul>
+                <li>tofu mariné</li>
+                <li>légumes du jardin</li>
+                <li>assaisonnement (gluten)</li>
+                <li>petit bol de riz</li>
+            </ul>
+        </figcaption>
+    </figure>
+    <figure class="img_menu">
+        <img src="../Image/vendredi_2.jpg" alt="Hamburger végé">
+        <figcaption>
+            Hamburger végé
+            <ul>
+                <li>boulette de quinoa</li>
+                <li>pain kaiser</li>
+                <li>tomate fraîche</li>
+                <li>laitue romaine</li>
+            </ul>
+        </figcaption>
+    </figure>
+</aside>
+<footer>
+    <h6>
+        DANY DEROY 2015 TP2 INF2005 PROGRAMMATION WEB
+    </h6>
+</footer>
+</body>
+
+</html>

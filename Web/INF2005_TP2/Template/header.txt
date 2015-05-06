@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Traiteur Berger</title>
+    <link href="TP2_CSS.css" rel="stylesheet" type="text/css">
+</head>
+<body >
+<header>
+    <div class="div_header">
+        <div class="header1">
+            <a href="index.html">
+                <img id="logo" src="Image/logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="header2">
+            <nav>
+                <a href="information.html">Information</a>
+                <a href="contact.html">Contact</a>
+                <a href="commande.html">Commande</a>
+            </nav>
+        </div>
+    </div>
+</header>
