@@ -1,0 +1,9 @@
+Résultat : 78%
+Écart-type : 17.20
+
+Lire l'énoncé : TP1-A15.pdf
+
+Trimestre hivers 2015
+
+Notes : Il y a une erreur lors de la validation du fichier, lors de réfactorisation, j'ai inversé 2 lignes de code
+    dans cette version le problème est réglé

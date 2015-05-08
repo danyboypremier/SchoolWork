@@ -1,3 +1,6 @@
-# INF2005TP2
-Site web intro à PHP
+Résultat : en attente 8 mai 2015
+Écart-type : ...
 
+Lire l'énoncé : TP2.pdf
+
+Trimestre hivers 2015

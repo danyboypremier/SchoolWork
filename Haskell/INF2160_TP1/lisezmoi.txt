@@ -1,0 +1,6 @@
+Résultat : 20/20
+Écart-type : 2.94
+
+Lire l'énoncé : tp1.hs
+
+Trimestre Hivers 2015

@@ -38,13 +38,15 @@ void trierAlpha (vector<motFrequence>&);
 void afficherResultat (vector<motFrequence>&);
 
 int main (int argc, char *argv[]) {
-    string ficIn = argv[1];
+    string ficIn;
     vector<motFrequence> listeMot;
     string buffer = "";
     motFrequence element;
 
     try {
         validerNbArguments(argc);
+
+        ficIn = argv[1];
         validerFichierEntre(ficIn);
 
         ifstream texte(ficIn.c_str());
