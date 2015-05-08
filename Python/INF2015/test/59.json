@@ -1,0 +1,10 @@
+{
+    "erreurs": [
+        "L'activité 'Cours sur la déontologie' de la catégorie 'inconnue' n'est pas valide.", 
+        "Il vous manque 22 heure(s) dans la catégorie : cours.", 
+        "Il vous manque 3 heure(s) dans la catégorie : projet de recherche.", 
+        "Il vous manque 1 heure(s) dans la catégorie : groupe de discussion.", 
+        "Vous avez fait 0 heure(s) de formation continue. Il vous manque 55 heure(s) pour compléter ce cycle."
+    ], 
+    "complet": false
+}

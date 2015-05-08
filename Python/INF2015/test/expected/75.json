@@ -1,0 +1,7 @@
+{
+    "erreurs": [
+        "Il vous manque 24 heure(s) dans la catégorie : cours.", 
+        "Vous avez fait 10 heure(s) de formation continue. Il vous manque 80 heure(s) pour compléter ce cycle."
+    ], 
+    "complet": false
+}

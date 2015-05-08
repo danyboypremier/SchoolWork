@@ -1,0 +1,9 @@
+Résultat :
+    partie 1 : 5/5      Écart-type : 1.12
+    partie 1 : 100%      Écart-type : 23.52
+    partie 1 : 5/5      Écart-type : 1.34
+    partie 1 : 100%      Écart-type : 23.87
+
+Lire l'énoncé : L'énoncé n'est plus disponible
+
+trimestre automne 2014

@@ -1,0 +1,10 @@
+{
+    "erreurs": [
+        "L'activité 'Cours sur la déontologie' de la catégorie 'séminaireopy ' n'est pas valide.", 
+        "Il vous manque 1 heure(s) dans la catégorie : cours.", 
+        "Il vous manque 1 heure(s) dans la catégorie : projet de recherche.", 
+        "Il vous manque 1 heure(s) dans la catégorie : groupe de discussion.", 
+        "Vous avez fait 23 heure(s) de formation continue. Il vous manque 37 heure(s) pour compléter ce cycle."
+    ], 
+    "complet": false
+}

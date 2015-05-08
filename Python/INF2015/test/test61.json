@@ -1,0 +1,16 @@
+{
+    "nom": "Totonski",
+    "prenom": "Madame",
+    "sexe": 2,
+    "ordre": "géologues",
+    "numero_de_permis": "TM3822",
+    "cycle": "2013-2016",
+    "activites": [
+        {
+            "description": "Cours sur la déontologie",
+            "categorie": "cours",
+            "heures": 100,
+            "date": "2013-06-01"
+        }
+    ]
+}

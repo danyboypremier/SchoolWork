@@ -1,0 +1,29 @@
+{
+    "nom": "Totonski",
+    "prenom": "Madame",
+    "sexe": 2,
+    "ordre": "architectes",
+    "numero_de_permis": "T3443",
+    "cycle": "2010-2012",
+    "heures_transferees_du_cycle_precedent": 8,
+    "activites": [
+        {
+            "description": "12345678901234567890eee",
+            "categorie": "cours",
+            "heures": 15,
+            "date": "2012-04-01"
+        },
+        {
+            "description": "Séminaire sur l'architecture contemporaine",
+            "categorie": "atelier",
+            "heures": 12,
+            "date": "2011-01-07"
+        },
+        {
+            "description": "Rédaction pour le magazine Architecture moderne",
+            "categorie": "séminaire",
+            "heures": 15,
+            "date": "2011-01-07"
+        }
+    ]
+}

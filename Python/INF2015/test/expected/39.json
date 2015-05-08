@@ -1,0 +1,8 @@
+{
+    "erreurs": [
+        "La date pour l'activité 'Séminaire sur l'architecture contemporaine' n'est pas valide.", 
+        "La date pour l'activité 'Rédaction pour le magazine Architecture moderne' n'est pas valide.", 
+        "Le nombre d'heure(s) tranférée(s) du dernier cycle est 8. Nombre d'heure(s) non transférée(s): 1"
+    ], 
+    "complet": true
+}

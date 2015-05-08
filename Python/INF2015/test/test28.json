@@ -1,0 +1,71 @@
+{
+    "nom": "Totonski",
+    "prenom": "Madame",
+    "sexe": 2,
+    "ordre": "architectes",
+    "numero_de_permis": "T3443",
+    "cycle": "2008-2010",
+    "heures_transferees_du_cycle_precedent": 0,
+    "activites": [
+        {
+            "description": "12345678901234567890eee",
+            "categorie": "cours",
+            "heures": 15,
+            "date": "2009-01-07"
+        },
+        {
+            "description": "Séminaire sur l'architecture contemporaine",
+            "categorie": "atelier",
+            "heures": 12,
+            "date": "2009-01-07"
+        },
+        {
+            "description": "Rédaction pour le magazine Architecture moderne",
+            "categorie": "séminaire",
+            "heures": 15,
+            "date": "2009-01-07"
+        },
+        {
+            "description": "Participation à un groupe de discussion sur le partage des projets architecturaux de plus de 20 ans",
+            "categorie": "colloque",
+            "heures": 6,
+            "date": "2009-01-07"
+        },
+        {
+            "description": "12345678901234567890eee",
+            "categorie": "conférence",
+            "heures": 15,
+            "date": "2009-01-07"
+        },
+        {
+            "description": "Séminaire sur l'architecture contemporaine",
+            "categorie": "lecture dirigée",
+            "heures": 12,
+            "date": "2009-01-07"
+        },
+        {
+            "description": "Rédaction pour le magazine Architecture moderne",
+            "categorie": "présentation",
+            "heures": 15,
+            "date": "2009-01-07"
+        },
+        {
+            "description": "Participation à un groupe de discussion sur le partage des projets architecturaux de plus de 20 ans",
+            "categorie": "groupe de discussion",
+            "heures": 6,
+            "date": "2009-01-07"
+        },
+        {
+            "description": "Séminaire sur l'architecture contemporaine",
+            "categorie": "projet de recherche",
+            "heures": 12,
+            "date": "2009-01-07"
+        },
+        {
+            "description": "Rédaction pour le magazine Architecture moderne",
+            "categorie": "inconnue",
+            "heures": 15,
+            "date": "2009-01-07"
+        }
+    ]
+}

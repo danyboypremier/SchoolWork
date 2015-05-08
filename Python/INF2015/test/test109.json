@@ -1,0 +1,28 @@
+{
+    "nom": "Totonski",
+    "prenom": "Nonsieur",
+    "sexe": 1,
+    "ordre": "podiatres",
+    "numero_de_permis": "13822",
+    "cycle": "2013-2016",
+    "activites": [
+        {
+            "description": "Cours sur la déontologie",
+            "categorie": "cours",
+            "heures": 22,
+            "date": "2014-03-20"
+        },
+        {
+            "description": "Séminaire sur l'architecture contemporaine",
+            "categorie": "projet de recherche",
+            "heures": 3,
+            "date": "2014-01-07"
+        },
+        {
+            "description": "Rédaction pour le magazine Architecture moderne",
+            "categorie": "rédaction professionnelle",
+            "heures": 56,
+            "date": "2014-10-22"
+        }
+    ]
+}

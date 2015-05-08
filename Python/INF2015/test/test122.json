@@ -1,0 +1,28 @@
+{
+    "nom": "Totonski",
+    "prenom": "Nonsieur",
+    "sexe": 1,
+    "ordre": "podiatres",
+    "numero_de_permis": "13822",
+    "cycle": "2013-2016",
+    "activites": [
+        {
+            "description": "Cours sur la déontologie",
+            "categorie": "cours",
+            "heures": 21,
+            "date": "2016-06-01"
+        },
+        {
+            "description": "Cours sur la déontologie",
+            "categorie": "projet de recherche",
+            "heures": 3,
+            "date": "2015-06-02"
+        },
+        {
+            "description": "Cours sur la déontologie",
+            "categorie": "séminaireopy ",
+            "heures": 29,
+            "date": "2014-06-02"
+        }
+    ]
+}

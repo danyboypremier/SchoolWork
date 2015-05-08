@@ -1,0 +1,17 @@
+{
+    "nom": "Totonski",
+    "prenom": "Madame",
+    "sexe": 2,
+    "ordre": "architectes",
+    "numero_de_permis": "T3443",
+    "cycle": "2008-2010",
+    "heures_transferees_du_cycle_precedent": 8,
+    "activites": [
+        {
+            "description": "12345678901234567890eee",
+            "categorie": "cours",
+            "heures": 42,
+            "date": "2009-01-01"
+        }
+    ]
+}

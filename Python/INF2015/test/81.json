@@ -1,0 +1,9 @@
+{
+    "erreurs": [
+        "La date pour l'activité 'Cours sur la déontologie' n'est pas valide.", 
+        "L'activité 'Participation à un groupe de discussion sur le partage des projets architecturaux de plus de 20 ans' de la catégorie 'inconnue' n'est pas valide.", 
+        "Il vous manque 25 heure(s) dans la catégorie : cours.", 
+        "Vous avez fait 8 heure(s) de formation continue. Il vous manque 82 heure(s) pour compléter ce cycle."
+    ], 
+    "complet": false
+}

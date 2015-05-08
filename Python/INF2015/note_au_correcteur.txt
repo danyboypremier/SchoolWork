@@ -1,0 +1,35 @@
+﻿NOTE AU CORRECTEUR
+
+Ce projet utilise Python 2.7.
+
+Le BUILD a été automatisé dans IntelliJ. Celui-ci comprend tous les tests et 
+roule aussi la couverture de test. Si vous ne pouvez pas utiliser IntelliJ, 
+nous fournissons des possibilités pour le shell linux plus bas.
+
+Le rapport de couverture de test est disponible dans le fichier: couverture_de_test.txt
+La ligne src indique la ligne de couverture totale.
+Le projet compte 194 tests.
+Le code des tests utilise le pattern Build-Operate-Check (donc il peut y avoir des lignes vides dans une méthode)
+Les classes de test sont tous dans le répertoire racine sous le format test_*.py
+Le répertoire 'test' contient les fichiers de test utilisés avant que des tests unitaires soient effectués. (ne pas
+considérer ce répertoire)
+
+Pour exécuter tous les tests dans le shell linux (ou windows), vous pouvez 
+utiliser à partir du répertoire equipe5:
+python -m unittest discover
+
+Pour exécuter la couverture de test dans le shell linux, vous pouvez utiliser
+python-coverage.
+
+_______________________________________________________________________________________
+
+Si vous désirez un exécutable sur ce programme en python "un langage interprété", vous
+devez absolument utiliser un programme tierce partie. (par exemple py2exe)
+
+Le script pour p2exe serait (ce script fonctionne, tant que vous avez py2exe installé:
+
+from distutils.core import setup
+import py2exe
+
+setup(console=['main.py'])
+

@@ -1,0 +1,176 @@
+    TEST                                                                    EXECUTION   CONSOLE     JSON
+--------------------------------------------------------------------------------------------------------------------------------------------------
+01  ordre "géologues"                                                       OK                      
+02  ordre "psychologues"                                                    OK                      
+03  ordre "architectes"                                                     OK                      
+04  ordre "inconnu"                                                         ERREUR      MSG         OUI AVEC MSG ERREUR SEULEMENT
+05  architectes, numero_de_permis "A0001"                                   OK                      
+06  architectes, numero_de_permis "T9999"                                   OK                      
+07  architectes, numero_de_permis "S1000"                                   ERREUR      MSG         OUI AVEC MSG ERREUR SEULEMENT                      
+08  architectes, numero_de_permis "Z1111"                                   ERREUR      MSG         OUI AVEC MSG ERREUR SEULEMENT
+09  architectes, numero_de_permis "a0001"                                   ERREUR      MSG         OUI AVEC MSG ERREUR SEULEMENT
+10  architectes, numero_de_permis "1000"                                    ERREUR      MSG         OUI AVEC MSG ERREUR SEULEMENT
+11  architectes, numero_de_permis "A000w"                                   ERREUR      MSG         OUI AVEC MSG ERREUR SEULEMENT
+12  architectes, numero_de_permis "Z10000"                                  ERREUR      MSG         OUI AVEC MSG ERREUR SEULEMENT
+13  activite, description "123456789012345678901"                           OK                      
+14  activite, description "12345678901234567890"                            ERREUR      MSG         OUI AVEC MSG ERREUR SEULEMENT
+15  activite, heures 10                                                     OK
+16  activite, heures 1                                                      OK
+17  activite, heures 0                                                      ERREUR      MSG         OUI AVEC MSG ERREUR SEULEMENT
+18  activite, heures -1                                                     ERREUR      MSG         OUI AVEC MSG ERREUR SEULEMENT
+19  activite, date "2012-06-02"                                             OK
+20  activite, date "02-06-2012"                                             ERREUR      MSG         OUI AVEC MSG ERREUR SEULEMENT
+21  architectes, cycle 2012-2014 [Entre 1er avril 2012 - 1er avril 2014]    OK
+22  architectes, cycle 2010-2012 [Entre 1er avril 2010 - 1er avril 2012]    OK
+23  architectes, cycle 2008-2010 [Entre 1er avril 2008 - 1er juillet 2010]  OK
+24  architectes, cycle 2008-2009                                            ERREUR      RIEN        OUI AVEC MSG ERREUR CYCLE INVALIDE
+25  architectes, activite, categorie 'cours',                               OK
+    architectes, activite, categorie 'atelier'                              OK
+    architectes, activite, categorie 'séminaire'                            OK
+    architectes, activite, categorie 'colloque'                             OK
+    architectes, activite, categorie 'conférence'                           OK
+    architectes, activite, categorie 'lecture dirigée'                      OK
+    architectes, activite, categorie 'présentation'                         OK
+    architectes, activite, categorie 'groupe de discussion'                 OK
+    architectes, activite, categorie 'projet de recherche'                  OK
+    architectes, activite, categorie 'rédaction professionnelle'            OK
+26  architectes, activite, categorie 'inconnue'                             ERREUR      RIEN        OUI AVEC MSG ET IGNORE L'ACTIVITE DES CALCULS
+27  architectes, heures_transferees_du_cycle_precedent "-1"                 ERREUR      MSG         OUI AVEC MSG ERREUR SEULEMENT
+28  architectes, heures_transferees_du_cycle_precedent "0"                  OK
+29  architectes, heures_transferees_du_cycle_precedent "7"                  OK
+30  architectes, heures_transferees_du_cycle_precedent "8"                  EXCEPT      RIEN        OUI AVEC MSG HEURES TRANSFEREES TROP, CONSIDERER SEULEMENT 7 HEURES
+31  architectes, activite cycle 2012-2014 date [1er avril 2012]             OK
+32  architectes, activite cycle 2012-2014 date [30 mars 2012]               ERREUR      RIEN        OUI AVEC MSG DATE INVALIDE ET IGNORE L'ACTIVITE DES CALCULS
+33  architectes, activite cycle 2012-2014 date [1er mai 2014]               ERREUR      RIEN        OUI AVEC MSG DATE INVALIDE ET IGNORE L'ACTIVITE DES CALCULS
+34  architectes, activite cycle 2010-2012 date [1er avril 2012] (Meme date!)OK
+35  architectes, activite cycle 2010-2012 date [30 mars 2010]               ERREUR      RIEN        OUI AVEC MSG DATE INVALIDE ET IGNORE L'ACTIVITE DES CALCULS
+36  architectes, activite cycle 2010-2012 date [1er mai 2012]               ERREUR      RIEN        OUI AVEC MSG DATE INVALIDE ET IGNORE L'ACTIVITE DES CALCULS
+37  architectes, activite cycle 2008-2010 date [1er janvier 2009]           OK
+38  architectes, activite cycle 2008-2010 date [30 mars 2008]               ERREUR      RIEN        OUI AVEC MSG DATE INVALIDE ET IGNORE L'ACTIVITE DES CALCULS
+39  architectes, activite cycle 2008-2010 date [2 juillet 2010]             ERREUR      RIEN        OUI AVEC MSG DATE INVALIDE ET IGNORE L'ACTIVITE DES CALCULS
+40  architectes, 42 heures de formation total [2008-2010]                   OK
+41  architectes, 41 heures de formation total [2008-2010]                   ERREUR      RIEN        OUI AVEC MSG HEURES MANQUANTES TOTAL (False)
+42  architectes, 17 heures [cours .. lecture dirigée] incluant heures trans OK
+43  architectes, 16 heures [cours .. lecture dirigée] incluant heures trans ERREUR      RIEN        OUI AVEC MSG HEURES MANQUANTES GROUPE A (False)
+44  architectes, 23 heures [presentation]                                   OK
+45  architectes, 24 heures [presentation]                                   EVENT       RIEN        OUI SANS MSG, CONSIDERER SEULEMENT 23 HEURES
+46  architectes, 17 heures [groupe de discussion]                           OK
+47  architectes, 18 heures [groupe de discussion]                           EVENT       RIEN        OUI SANS MSG, CONSIDERER SEULEMENT 17 HEURES
+48  architectes, 23 heures [projet de recherche]                            OK
+49  architectes, 24 heures [projet de recherche]                            EVENT       RIEN        OUI SANS MSG, CONSIDERER SEULEMENT 23 HEURES
+50  architectes, 17 heures [redaction]                                      OK
+51  architectes, 18 heures [redaction]                                      EVENT       RIEN        OUI SANS MSG, CONSIDERER SEULEMENT 17 HEURES
+52  ordre <- champ inexistant                                               ERREUR      MSG         OUI AVEC MSG ERREUR SEULEMENT
+53  cycle <- champ inexistant                                               ERREUR      MSG         OUI AVEC MSG ERREUR SEULEMENT
+54  description <- champ inexistant                                         ERREUR      MSG         OUI AVEC MSG ERREUR SEULEMENT
+55  géologues, cycle 2013-2016 [Entre 1er juin 2013 - 1er juin 2016]        OK
+56  géologues, cycle 2014-2015                                              ERREUR      RIEN        OUI AVEC MSG ERREUR CYCLE INVALIDE
+57  géologues, activite, categorie 'cours',                                 OK
+    géologues, activite, categorie 'atelier'                                OK
+    géologues, activite, categorie 'séminaire'                              OK
+    géologues, activite, categorie 'colloque'                               OK
+    géologues, activite, categorie 'conférence'                             OK
+    géologues, activite, categorie 'lecture dirigée'                        OK
+    géologues, activite, categorie 'présentation'                           OK
+    géologues, activite, categorie 'groupe de discussion'                   OK
+    géologues, activite, categorie 'projet de recherche'                    OK
+    géologues, activite, categorie 'rédaction professionnelle'              OK
+58  géologues, activite, categorie 'inconnue'                               ERREUR      RIEN        OUI AVEC MSG ET IGNORE L'ACTIVITE DES CALCULS
+59  géologues, heures_transferees_du_cycle_precedent <- INEXISTANT          OK
+60  géologues, heures_transferees_du_cycle_precedent "1"                    ERREUR      MSG         OUI AVEC MSG ERREUR SEULEMENT
+61  géologues, activite cycle 2013-2016 date [1er juin 2013]                OK
+62  géologues, activite cycle 2013-2016 date [1er juin 2016]                OK
+63  géologues, activite cycle 2013-2016 date [31 mai 2013]                  ERREUR      RIEN        OUI AVEC MSG DATE INVALIDE ET IGNORE L'ACTIVITE DES CALCULS
+64  géologues, activite cycle 2013-2016 date [2 juin 2016]                  ERREUR      RIEN        OUI AVEC MSG DATE INVALIDE ET IGNORE L'ACTIVITE DES CALCULS
+65  géologues, 55 heures de formation total                                 OK
+66  géologues, 54 heures de formation total                                 ERREUR      RIEN        OUI AVEC MSG HEURES MANQUANTES TOTAL (False)
+67  géologues, 22 heures [cours]                                            OK
+68  géologues, 21 heures [cours]                                            ERREUR      RIEN        OUI AVEC MSG HEURES MANQUANTES GROUPE cours
+69  géologues, 3 heures [projet de recherche]                               OK
+70  géologues, 2 heures [projet de recherche]                               ERREUR      RIEN        OUI AVEC MSG HEURES MANQUANTES GROUPE projet de recherche
+71  géologues, 1 heures [groupe de discussion]                              OK
+72  géologues, 0 heures [groupe de discussion]                              ERREUR      RIEN        OUI AVEC MSG HEURES MANQUANTES GROUPE groupe de discussion
+73  psychologues, cycle 2010-2015 [Entre 1er janv 2010 - 1er janv 2015]     OK
+74  psychologues, cycle 2014-2015                                           ERREUR      RIEN        OUI AVEC MSG ERREUR CYCLE INVALIDE
+75  psychologues, activite, categorie 'cours',                              OK
+    psychologues, activite, categorie 'atelier'                             OK
+    psychologues, activite, categorie 'séminaire'                           OK
+    psychologues, activite, categorie 'colloque'                            OK
+    psychologues, activite, categorie 'conférence'                          OK
+    psychologues, activite, categorie 'lecture dirigée'                     OK
+    psychologues, activite, categorie 'présentation'                        OK
+    psychologues, activite, categorie 'groupe de discussion'                OK
+    psychologues, activite, categorie 'projet de recherche'                 OK
+    psychologues, activite, categorie 'rédaction professionnelle'           OK
+76  psychologues, activite, categorie 'inconnue'                            ERREUR      RIEN        OUI AVEC MSG ET IGNORE L'ACTIVITE DES CALCULS
+77  psychologues, heures_transferees_du_cycle_precedent <- INEXISTANT       OK
+78  psychologues, heures_transferees_du_cycle_precedent "0"                 ERREUR      MSG         OUI AVEC MSG ERREUR SEULEMENT
+79  psychologues, activite cycle 2010-2015 date [1er janv 2010]             OK
+80  psychologues, activite cycle 2010-2015 date [1er janv 2015]             OK
+81  psychologues, activite cycle 2010-2015 date [31 dec 2009]               ERREUR      RIEN        OUI AVEC MSG DATE INVALIDE ET IGNORE L'ACTIVITE DES CALCULS
+82  psychologues, activite cycle 2010-2015 date [2 janv 2015]               ERREUR      RIEN        OUI AVEC MSG DATE INVALIDE ET IGNORE L'ACTIVITE DES CALCULS
+83  psychologues, 90 heures de formation total                              OK
+84  psychologues, 89 heures de formation total                              ERREUR      RIEN        OUI AVEC MSG HEURES MANQUANTES TOTAL (False)
+85  psychologues, 25 heures [cours]                                         OK
+86  psychologues, 24 heures [cours]                                         ERREUR      RIEN        OUI AVEC MSG HEURES MANQUANTES GROUPE cours
+87  psychologues, 15 heures [conférence]                                    OK
+88  psychologues, 16 heures [conférence]                                    EVENT       RIEN        OUI SANS MSG, CONSIDERER SEULEMENT 15 HEURES
+89  architectes, 40 heures de formation total [2012-2014]                   OK
+90  architectes, 39 heures de formation total [2012-2014]                   ERREUR      RIEN        OUI AVEC MSG HEURES MANQUANTES TOTAL (False)
+91  psychologues, numero_de_permis "83723-34"                               OK                      
+92  psychologues, numero_de_permis "99999-00"                               OK                      
+93  psychologues, numero_de_permis "9999900"                                ERREUR      MSG         OUI AVEC MSG ERREUR SEULEMENT
+94  psychologues, numero_de_permis "a9999-00"                               ERREUR      MSG         OUI AVEC MSG ERREUR SEULEMENT
+95  psychologues, numero_de_permis "a99999-00"                              ERREUR      MSG         OUI AVEC MSG ERREUR SEULEMENT
+96  psychologues, numero_de_permis "99999.00"                               ERREUR      MSG         
+97  geologues, numero_de_permis "TM1234" Madame Totonski                    OK                      
+98  geologues, numero_de_permis "BA0000" Abdul bariba                       OK                      
+99  geologues, numero_de_permis "tm1234" Madame Totonski                    OK
+100 geologues, numero_de_permis "TM-1234"                                   ERREUR      MSG         OUI AVEC MSG ERREUR SEULEMENT
+101 geologues, numero_de_permis "TM-12"                                     ERREUR      MSG         OUI AVEC MSG ERREUR SEULEMENT
+102 geologues, numero_de_permis "aTM1234"                                   ERREUR      MSG 
+103 podiatres, numero_de_permis "83723"                                     OK                      
+104 podiatres, numero_de_permis "00000"                                     OK                      
+105 podiatres, numero_de_permis "1234"                                      ERREUR      MSG         OUI AVEC MSG ERREUR SEULEMENT
+106 podiatres, numero_de_permis "123456"                                    ERREUR      MSG         OUI AVEC MSG ERREUR SEULEMENT
+107 podiatres, numero_de_permis "aaaaa"                                     ERREUR      MSG         OUI AVEC MSG ERREUR SEULEMENT
+108 podiatres, numero_de_permis "a83723"                                    ERREUR      MSG         
+109 podiatres, cycle 2013-2016 [Entre 1er juin 2013 - 1er juin 2016]        OK
+110 podiatres, cycle 2014-2015                                              ERREUR      RIEN        OUI AVEC MSG ERREUR CYCLE INVALIDE
+111 podiatres, activite, categorie 'cours',                                 OK
+    podiatres, activite, categorie 'atelier'                                OK
+    podiatres, activite, categorie 'séminaire'                              OK
+    podiatres, activite, categorie 'colloque'                               OK
+    podiatres, activite, categorie 'conférence'                             OK
+    podiatres, activite, categorie 'lecture dirigée'                        OK
+    podiatres, activite, categorie 'présentation'                           OK
+    podiatres, activite, categorie 'groupe de discussion'                   OK
+    podiatres, activite, categorie 'projet de recherche'                    OK
+    podiatres, activite, categorie 'rédaction professionnelle'              OK
+112 podiatres, activite, categorie 'inconnue'                               ERREUR      RIEN        OUI AVEC MSG ET IGNORE L'ACTIVITE DES CALCULS13
+113 podiatres, heures_transferees_du_cycle_precedent <- INEXISTANT          OK
+114 podiatres, heures_transferees_du_cycle_precedent "1"                    ERREUR      MSG         OUI AVEC MSG ERREUR SEULEMENT
+115 podiatres, activite cycle 2013-2016 date [1er juin 2013]                OK
+116 podiatres, activite cycle 2013-2016 date [1er juin 2016]                OK
+117 podiatres, activite cycle 2013-2016 date [31 mai 2013]                  ERREUR      RIEN        OUI AVEC MSG DATE INVALIDE ET IGNORE L'ACTIVITE DES CALCULS
+118 podiatres, activite cycle 2013-2016 date [2 juin 2016]                  ERREUR      RIEN        OUI AVEC MSG DATE INVALIDE ET IGNORE L'ACTIVITE DES CALCULS
+119 podiatres, 60 heures de formation total                                 OK
+120 podiatres, 59 heures de formation total                                 ERREUR      RIEN        OUI AVEC MSG HEURES MANQUANTES TOTAL (False) !!!!!!!!!!
+121 podiatres, 22 heures [cours]                                            OK
+122 podiatres, 21 heures [cours]                                            ERREUR      RIEN        OUI AVEC MSG HEURES MANQUANTES GROUPE cours
+123 podiatres, 3 heures [projet de recherche]                               OK
+124 podiatres, 2 heures [projet de recherche]                               ERREUR      RIEN        OUI AVEC MSG HEURES MANQUANTES GROUPE projet de recherche
+125 podiatres, 1 heures [groupe de discussion]                              OK
+126 podiatres, 0 heures [groupe de discussion]                              ERREUR      RIEN        OUI AVEC MSG HEURES MANQUANTES GROUPE groupe de discussion
+127 sexe 0                                                                  OK                      
+128 sexe 1                                                                  OK
+129 sexe 2                                                                  OK                      
+130 sexe 3                                                                  ERREUR      MSG         OUI AVEC MSG ERREUR SEULEMENT                      
+
+
+==========================================================================
+
+22  tests de fichier physique
+22  tests d'arguments
+
+

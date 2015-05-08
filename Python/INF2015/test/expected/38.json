@@ -1,0 +1,8 @@
+{
+    "erreurs": [
+        "La date pour l'activité '12345678901234567890eee' n'est pas valide.", 
+        "Le nombre d'heure(s) tranférée(s) du dernier cycle est 8. Nombre d'heure(s) non transférée(s): 1", 
+        "Vous avez fait 34 heure(s) de formation continue. Il vous manque 8 heure(s) pour compléter ce cycle."
+    ], 
+    "complet": false
+}

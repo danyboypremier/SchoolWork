@@ -1,0 +1,7 @@
+{
+    "erreurs": [
+        "La date pour l'activité '12345678901234567890eee' n'est pas valide.", 
+        "Le nombre d'heure(s) tranférée(s) du dernier cycle est 8. Nombre d'heure(s) non transférée(s): 1"
+    ], 
+    "complet": true
+}

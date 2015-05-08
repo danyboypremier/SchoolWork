@@ -1,0 +1,70 @@
+{
+    "nom": "Totonski",
+    "prenom": "Madame",
+    "sexe": 2,
+    "ordre": "psychologues",
+    "numero_de_permis": "83723-34",
+    "cycle": "2010-2015",
+    "activites": [
+        {
+            "description": "Cours sur la déontologie",
+            "categorie": "cours",
+            "heures": 1,
+            "date": "2010-01-01"
+        },
+        {
+            "description": "Séminaire sur l'architecture contemporaine",
+            "categorie": "atelier",
+            "heures": 1,
+            "date": "2014-01-07"
+        },
+        {
+            "description": "Rédaction pour le magazine Architecture moderne",
+            "categorie": "séminaire",
+            "heures": 1,
+            "date": "2014-10-22"
+        },
+        {
+            "description": "Participation à un groupe de discussion sur le partage des projets architecturaux de plus de 20 ans",
+            "categorie": "colloque",
+            "heures": 1,
+            "date": "2014-04-01"
+        },
+        {
+            "description": "Participation à un groupe de discussion sur le partage des projets architecturaux de plus de 20 ans",
+            "categorie": "conférence",
+            "heures": 1,
+            "date": "2014-04-01"
+        },
+        {
+            "description": "Cours sur la déontologie",
+            "categorie": "lecture dirigée",
+            "heures": 1,
+            "date": "2014-03-20"
+        },
+        {
+            "description": "Séminaire sur l'architecture contemporaine",
+            "categorie": "présentation",
+            "heures": 1,
+            "date": "2014-01-07"
+        },
+        {
+            "description": "Rédaction pour le magazine Architecture moderne",
+            "categorie": "groupe de discussion",
+            "heures": 1,
+            "date": "2014-10-22"
+        },
+        {
+            "description": "Participation à un groupe de discussion sur le partage des projets architecturaux de plus de 20 ans",
+            "categorie": "projet de recherche",
+            "heures": 1,
+            "date": "2014-04-01"
+        },
+        {
+            "description": "Participation à un groupe de discussion sur le partage des projets architecturaux de plus de 20 ans",
+            "categorie": "inconnue",
+            "heures": 1,
+            "date": "2014-04-01"
+        }
+    ]
+}

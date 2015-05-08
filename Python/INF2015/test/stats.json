@@ -1,0 +1,33 @@
+{
+    "nb_invalides": 70, 
+    "nb_sexe_feminin": 154, 
+    "nb_ordre_complet": {
+        "podiatres": 8, 
+        "geologues": 8, 
+        "psychologues": 6, 
+        "architectes": 48
+    }, 
+    "nb_sexe_masculin": 34, 
+    "nb_numero_permis_invalide": 36, 
+    "nb_ordre_incomplet": {
+        "podiatres": 34, 
+        "geologues": 30, 
+        "psychologues": 28, 
+        "architectes": 28
+    }, 
+    "nb_activites_valides_par_categorie": {
+        "lecture dirigée": 56, 
+        "groupe de discussion": 106, 
+        "présentation": 72, 
+        "cours": 156, 
+        "séminaire": 98, 
+        "atelier": 62, 
+        "colloque": 58, 
+        "projet de recherche": 102, 
+        "rédaction professionnelle": 64, 
+        "conférence": 60
+    }, 
+    "nb_sexe_inconnu": 2, 
+    "nb_complets": 70, 
+    "nb_incomplets": 120
+}

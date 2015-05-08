@@ -1,0 +1,33 @@
+{
+    "nb_invalides": 0, 
+    "nb_sexe_feminin": 0, 
+    "nb_ordre_complet": {
+        "podiatres": 0, 
+        "geologues": 0, 
+        "psychologues": 0, 
+        "architectes": 0
+    }, 
+    "nb_sexe_masculin": 0, 
+    "nb_numero_permis_invalide": 0, 
+    "nb_ordre_incomplet": {
+        "podiatres": 0, 
+        "geologues": 0, 
+        "psychologues": 0, 
+        "architectes": 0
+    }, 
+    "nb_activites_valides_par_categorie": {
+        "lecture dirigée": 0, 
+        "groupe de discussion": 0, 
+        "présentation": 0, 
+        "cours": 0, 
+        "séminaire": 0, 
+        "atelier": 0, 
+        "colloque": 0, 
+        "projet de recherche": 0, 
+        "rédaction professionnelle": 0, 
+        "conférence": 0
+    }, 
+    "nb_sexe_inconnu": 0, 
+    "nb_complets": 0, 
+    "nb_incomplets": 0
+}

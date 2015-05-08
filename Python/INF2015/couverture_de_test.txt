@@ -1,0 +1,17 @@
+classes.py	95% lines covered
+constantes.py	100% lines covered
+main.py	not covered
+statistiques.py	76% lines covered
+test_classes_activites.py	96% lines covered
+test_classes_categories.py	95% lines covered
+test_classes_membre.py	92% lines covered
+test_classes_rapport.py	95% lines covered
+test_statistiques.py	99% lines covered
+test_validation.py	86% lines covered
+test_validation_architectes.py	97% lines covered
+test_validation_geologues.py	97% lines covered
+test_validation_podiatres.py	93% lines covered
+test_validation_psychologues.py	96% lines covered
+validation.py	97% lines covered
+
+src	93% files, 95% lines covered
